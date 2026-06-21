@@ -10,9 +10,9 @@ services:
       - key: PORT
         value: "8000"
 
+static:
   # Frontend
-  - type: static
-    name: mon-frontend-react
+  - name: mon-frontend-react
     rootDir: Le-Format/frontend
     buildCommand: "npm install && npm run build"
     publishPath: dist
