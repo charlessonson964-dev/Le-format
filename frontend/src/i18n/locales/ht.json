@@ -1,0 +1,120 @@
+{
+  "brand": {
+    "name": "Le Format",
+    "tagline": "konvèti dokiman rapid, pwòp, modèn."
+  },
+  "nav": {
+    "home": "Akèy",
+    "formats": "Fòma",
+    "how": "Kijan sa mache"
+  },
+  "cta": {
+    "start": "Kòmanse konvèti",
+    "download": "Telechaje",
+    "convert": "Konvèti",
+    "cancel": "Anile",
+    "choose_file": "Chwazi yon fichye oswa depoze l la",
+    "convert_now": "Konvèti kounye a"
+  },
+  "hero": {
+    "badge": "Le Format",
+    "title": "konvèti dokiman rapid, pwòp, modèn.",
+    "subtitle": "Konvèti PDF, DOCX, CSV, Excel, JSON, imaj ak plis toujou . San kont, san etap ki pa nesesè.",
+    "stats": {
+      "conversions": "konvèsyon",
+      "instant": "Download imedya",
+      "cleanup": "Cleanup otomatik"
+    }
+  },
+  "home": {
+    "features": {
+      "fast": {
+        "title": "Workflow rapid",
+        "desc": "Upload, konvèsyon, download. Tout bagay fèt nan menm ekran an."
+      },
+      "real": {
+        "title": "Backend reyèl",
+        "desc": "Fòma yo soti nan endpoint FastAPI a, kidonk frontend lan swiv sa backend lan sipòte."
+      },
+      "control": {
+        "title": "Fichye kontwole",
+        "desc": "Limit gwosè, validation extension, output folder, ak cleanup otomatik deja konekte."
+      }
+    }
+  },
+  "converter": {
+    "drop_title": "Depoze fichye w lan oswa klike",
+    "drop_hint": "Fòma yo aksepte: PDF, DOCX, TXT, XLSX, CSV, JSON, PNG, JPG, SVG",
+    "source_label": "Fòma sous (detekte otomatikman)",
+    "target_label": "Konvèti an",
+    "target_placeholder": "Chwazi yon fòma sòti",
+    "submit": "Konvèti kounye a",
+    "loading": "Ap konvèti...",
+    "success": "Konvèsyon an reyisi!",
+    "result_label": "Fichye konvèti",
+    "download_cta": "Telechaje rezilta a",
+    "convert_another": "Konvèti yon lòt",
+    "errors": {
+      "no_file": "Tanpri chwazi yon fichye dabò.",
+      "no_target": "Tanpri chwazi fòma sòti a.",
+      "extension": "Fòma sa pa aksepte. Chwazi yon fichye ki nan lis la.",
+      "size": "Fichye a twò gwo. Maksimòm {{max}}.",
+      "generic": "Erè pandan konvèsyon. Eseye ankò."
+    }
+  },
+  "formats": {
+    "title": "Tout konvèsyon disponib",
+    "subtitle": "Lis sa a soti dirèk nan backend la, kidonk li rete ann amoni ak sa ki disponib.",
+    "count": "konvèsyon",
+    "outputs": "sòti",
+    "loading": "Ap chaje fòma yo...",
+    "error_title": "Pa ka chaje fòma yo",
+    "error_hint": "Verifye backend lan ap kouri sou http://localhost:8000.",
+    "convert_now": "Konvèti kounye a"
+  },
+  "how": {
+    "title": "Kijan li mache",
+    "subtitle": "Konvèti yon dokiman nan kèk etap senp.",
+    "lead": "Le Format fèt pou ale dwat nan objektif la: chwazi konvèsyon, ajoute fichye, epi rekipere rezilta a.",
+    "steps": {
+      "1": {
+        "title": "Chwazi yon konvèsyon",
+        "text": "Soti nan paj Fòma yo, chwazi pa egzanp PDF → Word, CSV → Excel oswa PNG → PDF."
+      },
+      "2": {
+        "title": "Ajoute dokiman w lan",
+        "text": "Konvètisè a prepare otomatikman tip fichye a. Ou jis depoze dokiman an oswa chwazi l nan telefòn ou."
+      },
+      "3": {
+        "title": "Telechaje rezilta a",
+        "text": "Lè konvèsyon an fini, bouton download la parèt tousuit ak non fichye konvèti a."
+      }
+    },
+    "notes_title": "Pou w sonje",
+    "notes": {
+      "1": "Ou pa bezwen okenn kont pou itilize platfòm nan.",
+      "2": "Fòma yo soti dirèk nan backend FastAPI a.",
+      "3": "Fichye tanporè yo netwaye otomatikman sou bò sèvè a."
+    }
+  },
+  "footer": {
+    "tagline": "Yon konvèti dokiman ki konekte dirèk ak backend FastAPI ou a.",
+    "pages_title": "Paj",
+    "status_title": "Estati backend",
+    "status_url": "API:",
+    "status_hint": "Chanje VITE_API_BASE_URL si backend lan sou yon lòt host.",
+    "copyright": "© {{year}} Le Format. Tout dwa rezève."
+  },
+  "notFound": {
+    "title": "Paj la pa egziste (404)"
+  },
+  "theme": {
+    "light": "Mode klè",
+    "dark": "Mode nwa",
+    "toggle": "Chanje mode"
+  },
+  "language": {
+    "label": "Lang",
+    "change": "Chanje lang"
+  }
+}

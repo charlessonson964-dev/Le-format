@@ -1,0 +1,111 @@
+{
+  "brand": {
+    "name": "Le Format",
+    "tagline": "Convertisseur de documents rapide, propre, moderne."
+  },
+  "nav": { "home": "Accueil", "formats": "Formats", "how": "Fonctionnement" },
+  "cta": {
+    "start": "Commencer",
+    "download": "Télécharger",
+    "convert": "Convertir",
+    "cancel": "Annuler",
+    "choose_file": "Choisir un fichier ou le déposer ici",
+    "convert_now": "Convertir maintenant"
+  },
+  "hero": {
+    "badge": "Le Format",
+    "title": "Convertissez vos documents, vite et bien.",
+    "subtitle": "Convertissez PDF, DOCX, CSV, Excel, JSON, images et plus encore, direct . Sans compte, sans étapes inutiles.",
+    "stats": {
+      "conversions": "conversions",
+      "instant": "Téléchargement instantané",
+      "cleanup": "Nettoyage automatique"
+    }
+  },
+  "home": {
+    "features": {
+      "fast": {
+        "title": "Flux rapide",
+        "desc": "Téléverser, convertir, télécharger. Tout se fait sur un seul écran."
+      },
+      "real": {
+        "title": "Backend réel",
+        "desc": "Les formats viennent du endpoint FastAPI, le frontend suit ce que le backend supporte."
+      },
+      "control": {
+        "title": "Fichiers contrôlés",
+        "desc": "Limite de taille, validation d'extension, dossier de sortie et nettoyage déjà branchés."
+      }
+    }
+  },
+  "converter": {
+    "drop_title": "Déposez votre fichier ou cliquez",
+    "drop_hint": "Formats acceptés : PDF, DOCX, TXT, XLSX, CSV, JSON, PNG, JPG, SVG",
+    "source_label": "Format source (détecté automatiquement)",
+    "target_label": "Convertir en",
+    "target_placeholder": "Choisir un format de sortie",
+    "submit": "Convertir maintenant",
+    "loading": "Conversion en cours...",
+    "success": "Conversion réussie !",
+    "result_label": "Fichier converti",
+    "download_cta": "Télécharger le résultat",
+    "convert_another": "Convertir un autre",
+    "errors": {
+      "no_file": "Veuillez choisir un fichier d'abord.",
+      "no_target": "Veuillez choisir un format de sortie.",
+      "extension": "Ce format n'est pas accepté. Choisissez un fichier de la liste.",
+      "size": "Fichier trop volumineux. Maximum {{max}}.",
+      "generic": "Erreur pendant la conversion. Réessayez."
+    }
+  },
+  "formats": {
+    "title": "Toutes les conversions disponibles",
+    "subtitle": "Cette liste vient directement du backend, elle reste en accord avec ce qui est disponible.",
+    "count": "conversions",
+    "outputs": "sorties",
+    "loading": "Chargement des formats...",
+    "error_title": "Impossible de charger les formats",
+    "error_hint": "Vérifiez que le backend tourne sur http://localhost:8000.",
+    "convert_now": "Convertir maintenant"
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "subtitle": "Convertir un document en quelques étapes simples.",
+    "lead": "Le Format est conçu pour aller droit au but : choisissez le type de conversion, ajoutez votre fichier, puis récupérez le résultat.",
+    "steps": {
+      "1": {
+        "title": "Choisissez une conversion",
+        "text": "Depuis la page Formats, sélectionnez par exemple PDF vers Word, CSV vers Excel ou PNG vers PDF."
+      },
+      "2": {
+        "title": "Ajoutez votre document",
+        "text": "Le convertisseur prépare automatiquement le type de fichier attendu. Vous n'avez qu'à déposer le document ou le choisir depuis votre téléphone."
+      },
+      "3": {
+        "title": "Téléchargez le résultat",
+        "text": "Une fois la conversion terminée, le bouton de téléchargement apparaît immédiatement avec le nom du fichier converti."
+      }
+    },
+    "notes_title": "À retenir",
+    "notes": {
+      "1": "Aucun compte n'est nécessaire pour utiliser la plateforme.",
+      "2": "Les formats affichés viennent directement du backend FastAPI.",
+      "3": "Les fichiers temporaires sont nettoyés automatiquement côté serveur."
+    }
+  },
+  "footer": {
+    "tagline": "Un convertisseur de documents connecté directement à votre backend FastAPI.",
+    "pages_title": "Pages",
+    "status_title": "Statut du backend",
+    "status_url": "API :",
+    "status_hint": "Changez VITE_API_BASE_URL si le backend est sur un autre hôte.",
+    "copyright": "© {{year}} Le Format. Tous droits réservés."
+  },
+  "notFound": { "title": "Cette page n'existe pas (404)" },
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "toggle": "Changer de mode"
+  },
+  "language": { "label": "Langue", "change": "Changer de langue" }
+}

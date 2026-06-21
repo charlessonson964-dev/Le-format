@@ -1,0 +1,111 @@
+{
+  "brand": {
+    "name": "Le Format",
+    "tagline": "Conversor de documentos rápido, limpio y moderno."
+  },
+  "nav": { "home": "Inicio", "formats": "Formatos", "how": "Cómo funciona" },
+  "cta": {
+    "start": "Empezar",
+    "download": "Descargar",
+    "convert": "Convertir",
+    "cancel": "Cancelar",
+    "choose_file": "Elige un archivo o suéltalo aquí",
+    "convert_now": "Convertir ahora"
+  },
+  "hero": {
+    "badge": "Le Format",
+    "title": "Convierte documentos. Rápido, limpio, moderno.",
+    "subtitle": "Convierte PDF, DOCX, CSV, Excel, JSON, imágenes y más en tu backend local. Sin cuenta, sin pasos extra.",
+    "stats": {
+      "conversions": "conversiones",
+      "instant": "Descarga inmediata",
+      "cleanup": "Limpieza automática"
+    }
+  },
+  "home": {
+    "features": {
+      "fast": {
+        "title": "Flujo rápido",
+        "desc": "Subir, convertir, descargar. Todo en una sola pantalla."
+      },
+      "real": {
+        "title": "Backend real",
+        "desc": "Los formatos vienen del endpoint FastAPI, el frontend sigue lo que el backend soporta."
+      },
+      "control": {
+        "title": "Archivos controlados",
+        "desc": "Límite de tamaño, validación de extensión, carpeta de salida y limpieza ya conectados."
+      }
+    }
+  },
+  "converter": {
+    "drop_title": "Suelta tu archivo o haz clic",
+    "drop_hint": "Formatos aceptados: PDF, DOCX, TXT, XLSX, CSV, JSON, PNG, JPG, SVG",
+    "source_label": "Formato de origen (detectado automáticamente)",
+    "target_label": "Convertir a",
+    "target_placeholder": "Elige un formato de salida",
+    "submit": "Convertir ahora",
+    "loading": "Convirtiendo...",
+    "success": "¡Conversión exitosa!",
+    "result_label": "Archivo convertido",
+    "download_cta": "Descargar el resultado",
+    "convert_another": "Convertir otro",
+    "errors": {
+      "no_file": "Por favor, elige un archivo primero.",
+      "no_target": "Por favor, elige un formato de salida.",
+      "extension": "Este formato no se acepta. Elige un archivo de la lista.",
+      "size": "Archivo demasiado grande. Máximo {{max}}.",
+      "generic": "Error en la conversión. Inténtalo de nuevo."
+    }
+  },
+  "formats": {
+    "title": "Todas las conversiones disponibles",
+    "subtitle": "Esta lista viene directamente del backend, así que se mantiene en sync con lo disponible.",
+    "count": "conversiones",
+    "outputs": "salidas",
+    "loading": "Cargando formatos...",
+    "error_title": "No se pueden cargar los formatos",
+    "error_hint": "Asegúrate de que el backend está corriendo en http://localhost:8000.",
+    "convert_now": "Convertir ahora"
+  },
+  "how": {
+    "title": "Cómo funciona",
+    "subtitle": "Convierte un documento en unos pasos sencillos.",
+    "lead": "Le Format está diseñado para ir al grano: elige la conversión, añade tu archivo y recoge el resultado.",
+    "steps": {
+      "1": {
+        "title": "Elige una conversión",
+        "text": "Desde la página Formatos, selecciona por ejemplo PDF a Word, CSV a Excel o PNG a PDF."
+      },
+      "2": {
+        "title": "Añade tu documento",
+        "text": "El conversor prepara automáticamente el tipo de archivo esperado. Solo suelta el documento o elígelo desde tu teléfono."
+      },
+      "3": {
+        "title": "Descarga el resultado",
+        "text": "Cuando la conversión termina, el botón de descarga aparece de inmediato con el nombre del archivo convertido."
+      }
+    },
+    "notes_title": "Para recordar",
+    "notes": {
+      "1": "No necesitas ninguna cuenta para usar la plataforma.",
+      "2": "Los formatos mostrados vienen directamente del backend FastAPI.",
+      "3": "Los archivos temporales se limpian automáticamente en el servidor."
+    }
+  },
+  "footer": {
+    "tagline": "Un conversor de documentos conectado directamente a tu backend FastAPI.",
+    "pages_title": "Páginas",
+    "status_title": "Estado del backend",
+    "status_url": "API:",
+    "status_hint": "Cambia VITE_API_BASE_URL si tu backend está en otro host.",
+    "copyright": "© {{year}} Le Format. Todos los derechos reservados."
+  },
+  "notFound": { "title": "Esta página no existe (404)" },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo oscuro",
+    "toggle": "Cambiar tema"
+  },
+  "language": { "label": "Idioma", "change": "Cambiar idioma" }
+}

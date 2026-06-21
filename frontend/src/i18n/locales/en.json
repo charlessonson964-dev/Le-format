@@ -1,0 +1,111 @@
+{
+  "brand": {
+    "name": "Le Format",
+    "tagline": "Fast, clean, modern document converter."
+  },
+  "nav": { "home": "Home", "formats": "Formats", "how": "How it works" },
+  "cta": {
+    "start": "Start converting",
+    "download": "Download",
+    "convert": "Convert",
+    "cancel": "Cancel",
+    "choose_file": "Choose a file or drop it here",
+    "convert_now": "Convert now"
+  },
+  "hero": {
+    "badge": "Le Format",
+    "title": "Convert documents. Fast, clean, modern.",
+    "subtitle": "Convert PDF, DOCX, CSV, Excel, JSON, images and more on your local backend. No account, no extra steps.",
+    "stats": {
+      "conversions": "conversions",
+      "instant": "Instant download",
+      "cleanup": "Auto cleanup"
+    }
+  },
+  "home": {
+    "features": {
+      "fast": {
+        "title": "Fast workflow",
+        "desc": "Upload, convert, download. Everything on a single screen."
+      },
+      "real": {
+        "title": "Real backend",
+        "desc": "Formats come from the FastAPI endpoint, the frontend follows what the backend supports."
+      },
+      "control": {
+        "title": "Controlled files",
+        "desc": "Size limit, extension validation, output folder and cleanup are already wired in."
+      }
+    }
+  },
+  "converter": {
+    "drop_title": "Drop your file or click",
+    "drop_hint": "Accepted formats: PDF, DOCX, TXT, XLSX, CSV, JSON, PNG, JPG, SVG",
+    "source_label": "Source format (auto detected)",
+    "target_label": "Convert to",
+    "target_placeholder": "Pick a target format",
+    "submit": "Convert now",
+    "loading": "Converting...",
+    "success": "Conversion successful!",
+    "result_label": "Converted file",
+    "download_cta": "Download the result",
+    "convert_another": "Convert another",
+    "errors": {
+      "no_file": "Please pick a file first.",
+      "no_target": "Please pick a target format.",
+      "extension": "This format is not accepted. Pick a file from the list.",
+      "size": "File too large. Maximum {{max}}.",
+      "generic": "Conversion error. Please try again."
+    }
+  },
+  "formats": {
+    "title": "All available conversions",
+    "subtitle": "This list comes directly from the backend, so it stays in sync with what is available.",
+    "count": "conversions",
+    "outputs": "outputs",
+    "loading": "Loading formats...",
+    "error_title": "Cannot load formats",
+    "error_hint": "Make sure the backend is running on http://localhost:8000.",
+    "convert_now": "Convert now"
+  },
+  "how": {
+    "title": "How it works",
+    "subtitle": "Convert a document in a few simple steps.",
+    "lead": "Le Format is built to get straight to the point: pick the conversion, add your file, then grab the result.",
+    "steps": {
+      "1": {
+        "title": "Pick a conversion",
+        "text": "From the Formats page, select e.g. PDF to Word, CSV to Excel or PNG to PDF."
+      },
+      "2": {
+        "title": "Add your document",
+        "text": "The converter prepares the expected file type automatically. Just drop the file or pick it from your phone."
+      },
+      "3": {
+        "title": "Download the result",
+        "text": "Once the conversion is done, the download button appears right away with the converted file name."
+      }
+    },
+    "notes_title": "Good to know",
+    "notes": {
+      "1": "No account is required to use the platform.",
+      "2": "The displayed formats come directly from the FastAPI backend.",
+      "3": "Temporary files are cleaned up automatically on the server side."
+    }
+  },
+  "footer": {
+    "tagline": "A document converter wired directly to your FastAPI backend.",
+    "pages_title": "Pages",
+    "status_title": "Backend status",
+    "status_url": "API:",
+    "status_hint": "Change VITE_API_BASE_URL if your backend is on another host.",
+    "copyright": "© {{year}} Le Format. All rights reserved."
+  },
+  "notFound": { "title": "Page not found (404)" },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggle": "Toggle theme"
+  },
+  "language": { "label": "Language", "change": "Change language" }
+}
