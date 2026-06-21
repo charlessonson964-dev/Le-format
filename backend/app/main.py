@@ -4,6 +4,10 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from pathlib import Path
+
 from app.api.v1.router import api_router
 from app.core.config import get_settings
 from app.core.logging import get_logger, setup_logging
@@ -11,6 +15,7 @@ from app.utils.cleanup import start_cleanup_scheduler
 
 setup_logging()
 logger = get_logger(__name__)
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -73,3 +78,21 @@ def create_app() -> FastAPI:
     return app
 
 app = create_app()
+
+# 1. Defini kote dosye frontend yo ye
+    # (Sipoze "frontend/dist" se kote React ou a ye)
+frontend_dir = Path(__file__).parent.parent / "frontend" / "dist"
+    
+if frontend_dir.exists():
+        # Sèvi dosye estatik yo (js, css, etc.)
+    app.mount("/assets", StaticFiles(directory=frontend_dir / "assets"), name="assets")
+        
+        # Sèvi index.html pou tout lòt wout (pou React Router mache)
+    @app.get("/{rest_of_path:path}")
+    async def serve_spa(rest_of_path: str):
+            # Si w pa mande API a (pa kòmanse ak /api), voye index.html
+        if not rest_of_path.startswith("api"):
+            return FileResponse(frontend_dir / "index.html")
+        return {"error": "Not found"}, 404
+else:
+    logger.warning("Frontend dist directory not found. Skipping static file mounting.")
