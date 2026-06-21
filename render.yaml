@@ -1,5 +1,5 @@
 services:
-  # Backend
+  # Backend (Web Service)
   - type: web
     name: mon-api-backend
     rootDir: Le-Format/backend
@@ -10,12 +10,13 @@ services:
       - key: PORT
         value: "8000"
 
-  # Frontend
+  # Frontend (Static Site estriktire kòm Web Service pou Blueprint)
   - type: web
     name: mon-frontend-react
     rootDir: Le-Format/frontend
     runtime: node
     buildCommand: "npm install && npm run build"
+    # Sèvi ak yon sèvè estatik ki lejè (serve)
     startCommand: "npx serve -s dist"
     envVars:
       - key: PORT
