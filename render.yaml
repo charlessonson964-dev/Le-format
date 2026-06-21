@@ -10,15 +10,13 @@ services:
       - key: PORT
         value: "8000"
 
-  # Frontend (Mete type: web jan Render mande a)
+  # Frontend
   - type: web
     name: mon-frontend-react
     rootDir: Le-Format/frontend
+    runtime: node
     buildCommand: "npm install && npm run build"
-    # Pou sit estatik yo sèvi ak "web", nou bezwen di l sèvi ak yon server estatik (tankou 'serve')
-    # oswa itilize yon lòt metòd. Men pi bon fason an pou Render se sèvi ak 'serve'
-    # apre nou fin fè "build"
-    startCommand: "npm install -g serve && serve -s dist"
+    startCommand: "npx serve -s dist"
     envVars:
       - key: PORT
         value: "3000"
