@@ -8,10 +8,10 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pathlib import Path
 
-from api.v1.router import api_router
-from core.config import get_settings
-from core.logging import get_logger, setup_logging
-from utils.cleanup import start_cleanup_scheduler
+from app.api.v1.router import api_router
+from app.core.config import get_settings
+from app.core.logging import get_logger, setup_logging
+from app.utils.cleanup import start_cleanup_scheduler
 
 setup_logging()
 logger = get_logger(__name__)
