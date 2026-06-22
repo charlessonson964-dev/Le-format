@@ -79,20 +79,24 @@ def create_app() -> FastAPI:
 
 app = create_app()
 
-# 1. Defini kote dosye frontend yo ye
-    # (Sipoze "frontend/dist" se kote React ou a ye)
-frontend_dir = Path(__file__).parent.parent / "frontend" / "dist"
+BASE_DIR = Path(__file__).resolve().parent.parent
+frontend_dir = BASE_DIR / "frontend" / "dist"
     
 if frontend_dir.exists():
-        # Sèvi dosye estatik yo (js, css, etc.)
+    logger.info(f"Frontend jwenn nan: {frontend_dir}")
+    # Sèvi dosye estatik yo
     app.mount("/assets", StaticFiles(directory=frontend_dir / "assets"), name="assets")
         
-        # Sèvi index.html pou tout lòt wout (pou React Router mache)
+    # Sèvi index.html pou tout lòt wout
     @app.get("/{rest_of_path:path}")
     async def serve_spa(rest_of_path: str):
-            # Si w pa mande API a (pa kòmanse ak /api), voye index.html
-        if not rest_of_path.startswith("api"):
-            return FileResponse(frontend_dir / "index.html")
-        return {"error": "Not found"}, 404
+        # Evite bloke rès wout API yo
+        if rest_of_path.startswith("api") or rest_of_path.startswith("docs") or rest_of_path.startswith("redoc"):
+            return {"error": "Not found"}, 404
+        
+        file_path = frontend_dir / "index.html"
+        if file_path.exists():
+            return FileResponse(file_path)
+        return {"error": "Frontend file not found"}, 404
 else:
-    logger.warning("Frontend dist directory not found. Skipping static file mounting.")
+    logger.warning(f"Frontend dist pa jwenn nan {frontend_dir}. Skipping static file mounting.")
